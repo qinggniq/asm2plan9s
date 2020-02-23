@@ -242,6 +242,7 @@ func main() {
 	result, err := assemble(lines, false)
 	println("end assemble")
 	if err != nil {
+		println("error???")
 		fmt.Print(err)
 		os.Exit(-1)
 	}
