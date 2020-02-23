@@ -238,8 +238,9 @@ func main() {
 	if err != nil {
 		log.Fatalf("readLines: %s", err)
 	}
-
+	println("begin assemble")
 	result, err := assemble(lines, false)
+	println("end assemble")
 	if err != nil {
 		fmt.Print(err)
 		os.Exit(-1)
