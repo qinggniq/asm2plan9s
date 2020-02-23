@@ -245,7 +245,7 @@ func main() {
 		fmt.Print(err)
 		os.Exit(-1)
 	}
-
+	fmt.Printf("%v\n", result)
 	err = writeLines(result, file, os.Stdout)
 	if err != nil {
 		log.Fatalf("writeLines: %s", err)
